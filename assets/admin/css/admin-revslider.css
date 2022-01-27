@@ -1,0 +1,184 @@
+/* ------------------------------------------------------------------------ */
+/* Revolution Slider - Buttons
+/* ------------------------------------------------------------------------ */
+
+.sh-revslider-button1,
+.sh-revslider-button2 {
+    text-decoration: none;
+}
+
+.sh-revslider-button1,
+.sh-revslider-button2 {
+    border-radius: 100px;
+    padding: 0px 45px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.sh-revslider-button1 {
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    color: #fff!important;
+    line-height: 56px;
+}
+
+.sh-revslider-button1:before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 150%;
+    background-color: rgba(0,0,0,0.07);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.sh-revslider-button1:hover:before {
+    width: 120%;
+}
+
+.sh-revslider-button2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff!important;
+    background-color: #fd8b36;
+    line-height: 60px;
+}
+
+.sh-revslider-button2:after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 150%;
+    background-color: rgba(0,0,0,0.07);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    transition: 0.3s all cubic-bezier(0.455, 0.030, 0.515, 0.955)!important;
+}
+
+.sh-revslider-button2:hover:after {
+    width: 120%;
+}
+
+.sh-revslider-button1 span,
+.sh-revslider-button2 span,
+.sh-revslider-button1 i,
+.sh-revslider-button2 i {
+    position: relative;
+    z-index: 5;
+}
+
+.sh-revslider-button1 span,
+.sh-revslider-button2 span {
+    line-height: 60px;
+    font-size: inherit!important;
+    position: relative;
+    bottom: -1px;
+}
+
+.sh-revslider-button1 span {
+    line-height: 56px;
+}
+
+.sh-revslider-button1 i,
+.sh-revslider-button2 i {
+    padding-left: 15px;
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: normal!important;
+}
+
+@media screen and (min-width: 700px) and (min-height: 600px) {
+    .sh-revslider-button1 i,
+    .sh-revslider-button2 i {
+        position: relative;
+        top: -1px;
+    }
+}
+
+.sh-revslider-button1.spacing-animation:before,
+.sh-revslider-button2.spacing-animation:after {
+	display: none;
+}
+
+.sh-revslider-button1.spacing-animation span,
+.sh-revslider-button2.spacing-animation span {
+	transition: 0.3s all ease-in-out!important;
+	letter-spacing: normal!important;
+}
+
+.sh-revslider-button1.spacing-animation:hover span,
+.sh-revslider-button2.spacing-animation:hover span {
+	letter-spacing: 2px!important;
+}
+
+.sh-revslider-button1.spacing-animation,
+.sh-revslider-button2.spacing-animation {
+	transition: 0.3s all ease-in-out!important;
+}
+
+.sh-revslider-button1.spacing-animation:hover {
+	background-color: rgba(0,0,0,0.07);
+}
+
+.sh-revslider-button2.inverted,
+.sh-revslider-button2.inverted:hover,
+.sh-revslider-button2.inverted:focus {
+	background-color: #ffffff!important;
+	color: #535353!important;
+}
+
+
+#thelayer-editor-wrapper .sh-rev-blog h2 {
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 20px;
+	line-height: 1!important;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog p {
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.5!important;
+	margin-bottom: 25px!important;
+	opacity: 0.8;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog-cat {
+	opacity: 0.8;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog-cat a {
+	color: #fff;
+	font-size: 13px;
+	padding-left: 8px;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog-cat a:first-child {
+	padding-left: 0px;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog .sh-revslider-button2 {
+	display: inline-block!important;
+	line-height: 50px;
+}
+
+#thelayer-editor-wrapper .sh-rev-blog .sh-revslider-button2 span {
+	line-height: 50px;}
+
+@media (min-width: 1250px) {
+	#thelayer-editor-wrapper .sh-rev-blog .sh-revslider-button2 span {
+		position: relative;
+		top: -1px;
+	}
+}

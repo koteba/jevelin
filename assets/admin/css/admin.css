@@ -1,0 +1,163 @@
+/*
+** Portfolio
+*/
+table.wp-list-table th.manage-column.column-image {
+	width: 150px;
+}
+
+
+/*
+** Customizer bottom fix
+*/
+body.wp-customizer .expanded .wp-full-overlay-footer {
+    max-height: 45px;
+}
+
+body.wp-customizer .wp-full-overlay .wp-full-overlay-sidebar-content {
+    bottom: 45px;
+}
+
+
+/*
+** Customizer Redux
+*/
+.redux-customizer-opt-name .redux-container-button_set span.ui-checkboxradio-icon {
+	display: none;
+}
+
+
+/*
+** Redux - Custom Social Media
+*/
+fieldset#jevelin_options-social_custom .fa {
+	font-family: "FontAwesome";
+}
+
+fieldset#jevelin_options-social_custom .upload_button_div,
+fieldset#jevelin_options-social_custom .media_upload_button {
+	display: none;
+}
+
+fieldset#jevelin_options-social_custom ul#social_custom-ul > li:nth-child(1):before,
+fieldset#jevelin_options-social_custom ul#social_custom-ul > li:nth-child(2):before {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+fieldset#jevelin_options-social_custom ul#social_custom-ul > li:nth-child(1):before {
+	content: "Icon";
+}
+
+fieldset#jevelin_options-social_custom ul#social_custom-ul > li:nth-child(2):before {
+	content: "URL";
+	padding-top: 15px;
+}
+
+fieldset#jevelin_options-social_custom .redux-slides-add {
+	margin-right: 0px;
+}
+
+
+/*
+** OCDI Version 3
+*/
+.appearance_page_one-click-demo-import .ocdi__theme-about,
+.appearance_page_one-click-demo-import .ocdi-install-plugins-content-content .ocdi-content-notice--warning,
+.appearance_page_one-click-demo-import .plugin-item {
+	display: none!important;
+}
+
+.appearance_page_one-click-demo-import .plugin-item-redux-framework,
+.appearance_page_one-click-demo-import .plugin-item-js_composer,
+.appearance_page_one-click-demo-import .plugin-item-revslider,
+.appearance_page_one-click-demo-import .plugin-item-woocommerce,
+.appearance_page_one-click-demo-import .plugin-item-contact-form-7 {
+	display: flex!important;
+}
+
+.appearance_page_one-click-demo-import .ocdi__title-container {
+	padding: 0px;
+	box-shadow: none;
+	margin-bottom: -5px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-header {
+	border-width: 0px;
+	box-shadow: none;
+	padding-left: 0px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-navigation li:first-child {
+	margin-left: 0px;
+}
+
+.appearance_page_one-click-demo-import .shufflehound-dashboard-message-ocdi {
+	margin-top: 30px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__content-container-content {
+	margin-top: 30px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item {
+	box-shadow: none;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl .ocdi__gl-item-button {
+	height: 34px;
+    margin-top: -3px;
+    position: relative;
+    margin-bottom: -2px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-button + .ocdi__gl-item-button {
+	background-color: #00b50f;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-button + .ocdi__gl-item-button:hover,
+.appearance_page_one-click-demo-import .ocdi__gl-item-button + .ocdi__gl-item-button:focus {
+	background-color: #009e0d;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-button:first-child {
+	background-color: #efefef;
+	color: #6b6b6b;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-button:first-child:hover,
+.appearance_page_one-click-demo-import .ocdi__gl-item-button:first-child:focus {
+	background-color: #e6e6e6;
+}
+
+.appearance_page_one-click-demo-import .ocdi__content-container {
+	padding: 0px;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-title {
+	font-weight: 600;
+	width: auto!important;
+}
+
+.appearance_page_one-click-demo-import .ocdi__gl-item-button,
+.appearance_page_one-click-demo-import .ocdi__content-container-content .ocdi-install-plugins-content-footer .button {
+	border-radius: 8px!important;
+	text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.appearance_page_one-click-demo-import .ocdi__content-container-content .ocdi-install-plugins-content-footer a.button:first-child {
+	color: #6b6b6b;
+	border-color: #6b6b6b;;
+}
+
+.appearance_page_one-click-demo-import .ocdi__content-container-content .ocdi-install-plugins-content-footer a.button img {
+	filter: grayscale(100%);
+}
+
+.appearance_page_one-click-demo-import .ocdi__content-container-content .ocdi-install-plugins-content-footer a.button:last-child {
+	background-color: #294cff;
+}

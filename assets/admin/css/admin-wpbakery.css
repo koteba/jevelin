@@ -1,0 +1,473 @@
+.vc_hide_option {
+    display: none;
+}
+
+/* WPbakery Custom Element Tabs */
+.vc_ui-panel-window[data-vc-shortcode="vcj_header_builder"] .vc_ui-panel-content {
+    margin-top: 0!important;
+}
+
+.wpbakery-element-minitabs {
+    position: relative;
+    margin-top: -23px;
+    margin-left: -18px;
+    margin-right: -18px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.wpbakery-element-minitabs > div {
+    padding: 10px 5px;
+    background-color: #545454;
+    color: #fff;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    font-size: 13px;
+    transition: 0.3s all ease-in;
+}
+
+.wpbakery-element-minitabs > div:not(.active):hover {
+    background-color: #4e4e4e;
+}
+
+.wpbakery-element-minitabs > div i {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.wpbakery-element-minitabs .active {
+    background-color: #383838;
+    color: #fff;
+}
+
+.wpbakery-element-tab-hidden {
+    display: none!important;
+}
+
+.wpbakery-element-tab-html {
+    position: sticky!important;
+    top: 23px;
+    z-index: 100;
+}
+
+.wpbakery-element-tab-html > div.edit_form_line,
+.wpbakery-element-tab-hidden-input > div.edit_form_line {
+    display: none!important;
+}
+
+
+/* Templates */
+body.wp-admin.sh-adminbody-loading .vc_ui-panel-window.vc_ui-panel {
+    display: none!important;
+}
+
+.vc_ui-template-panel-header-container,
+.vc_ui-add-element-header-container {
+    background-color: #0d76d1!important;
+    /*background-image: url(../../img/admin_background2.png)!important;*/
+    background-position: 0% 50%!important;
+    background-repeat: no-repeat;
+}
+
+.vc_ui-template-panel-header-container .vc_ui-panel-header-heading,
+.vc_ui-add-element-header-container .vc_ui-panel-header-heading {
+    font-weight: 600;
+}
+
+.vc_templates-panel .vc_ui-panel-window-inner,
+.vc_ui-panel-window[data-vc-ui-element="panel-add-element"] .vc_ui-panel-window-inner {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+    .vc_ui-template-panel-header-container .vc_ui-panel-header-content {
+        padding-left: 250px;
+    }
+
+    .vc_ui-template-panel-header-container .vc_ui-panel-header-heading {
+        position: relative;
+        top: 29px;
+        font-weight: 900!important;
+        font-size: 24px!important;
+        left: 4px;
+        margin-bottom: 0px!important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vc_ui-template-panel-header-container .vc_ui-search-box {
+        height: 21px;
+    }
+
+    .vc_ui-template-panel-header-container .vc_ui-search-box-input {
+        bottom: -36px;
+        right: -63px;
+        margin-bottom: -2px;
+    }
+
+    .vc_ui-template-panel-header-container .vc_ui-search-box-input input {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+        border-radius: 8px!important;
+    }
+}
+
+.vc_ui-template-panel-header-container .vc_general.vc_ui-tabs-line .vc_ui-tabs-line-trigger {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+    padding: 18px 19px 14px 19px;
+    color: #ddf0f9;
+}
+
+.vc_ui-template-panel-header-container .vc_general.vc_ui-tabs-line>.vc_active>.vc_ui-tabs-line-trigger {
+    color: #212121;
+}
+
+.vc_ui-template-panel-header-container .vc_panel-tabs-control {
+    position: relative;
+    z-index: 100;
+}
+
+.sh-template {
+    float: left;
+    margin-left: -4px;
+    width: calc(33.3% - 30px);
+    padding: 0 15px;
+}
+@media (max-width: 1400px) { .sh-template { width: calc(50% - 30px); } }
+@media (max-width: 900px) { .sh-template { width: calc(100% - 30px); } }
+
+
+.wp-admin .sh-templates-container .sh-template.active {
+    display: inline-block!important;
+}
+
+.wp-admin .sh-templates-container .vc_ui-template-list.vc_ui-list-bar {
+    margin-bottom: 2px;
+}
+
+.wp-admin .sh-templates-container .vc_ui-list-bar-item-actions {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0px;
+}
+
+.wp-admin .sh-templates-container .vc_ui-list-bar-item-actions button {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.sh-templates-container > div:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.sh-categories-container li {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #393939;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.1s all ease-in-out;
+}
+
+.wp-admin .sh-categories-container li.active {
+    color: #fff;
+    background-color: #0d76d1;
+}
+
+.sh-categories-container li span.count {
+    float: right;
+}
+
+.sh-categories-notice {
+    margin-left: 17px;
+    font-size: 10px; color: #ccc;
+}
+
+.sh-categories-container {
+    width: 240px !important;
+    padding-top: 15px;
+    height: 100%;
+    margin-bottom: 0;
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: visible;
+}
+
+.sh-templates-container {
+    width: 100% !important;
+    padding-top: 40px;
+    padding-left: 270px!important;
+    padding-right: 28px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: -5px -3px 0px 3px;
+    max-height: 71vh;
+}
+@media (max-height: 800px) { .sh-templates-container { max-height: 67vh; } }
+@media (max-height: 650px) { .sh-templates-container { max-height: 60vh; } }
+@media (max-height: 500px) { .sh-templates-container { max-height: 50vh; } }
+@media (max-height: 400px) { .sh-templates-container { max-height: 45vh; } }
+
+.vc_templates-panel .wpb_element_wrapper {
+    display: none!important;
+}
+
+/*.vc_templates-panel .vc_ui-panel-content {
+    overflow: hidden;
+}*/
+
+#sh-templates-content {
+    width: 100%;
+    margin-top: -18px;
+    margin-bottom: -18px;
+}
+
+.sh-template-container {
+    display: block!important;
+    border-width: 0px!important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 40px!important;
+    border: none;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.sh-template-preview {
+    width: 100%;
+}
+
+.sh-template .sh-template-title {
+    color: #505050!important;
+    font-weight: bold!important;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.3;
+    padding-top: 0px!important;
+    padding-bottom: 5px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.sh-template-categories {
+    color: #adadad;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sh-template-information {
+    padding: 17px 28px;
+    text-align: left;
+}
+
+.sh-template-information > * {
+    display: block;
+    width: 100%;
+}
+
+.sh-template-add,
+.sh-template-add i {
+    opacity: 0;
+}
+
+.sh-template-loading {
+    display: none;
+    position: absolute;
+    background-color: rgba( 0,0,0,0.7 );
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.sh-template-loading.active {
+    display: block;
+}
+
+
+/* Ratio */
+.sh-ratio {
+	position: relative;
+}
+
+.sh-ratio-container {
+	padding-bottom: 51%;
+}
+
+.sh-ratio-content {
+	position: absolute;
+	top: 0; right: 0; left: 0; bottom: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+
+/* Loader */
+.loader-item {
+	width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.loader {
+	width: 30px;
+    height: 30px;
+    position: relative;
+    margin: auto;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+}
+
+.loader-8::before,
+.loader-8::after {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.loader-8::before {
+  background: #fff;
+  -webkit-animation-name: droplets;
+          animation-name: droplets;
+}
+.loader-8::after {
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-animation-name: ripples;
+          animation-name: ripples;
+}
+
+@-webkit-keyframes droplets {
+  0%, 15% {
+    opacity: 1;
+  }
+  15% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  60% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  60%, 90% {
+    opacity: 0;
+  }
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  95%, 100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes droplets {
+  0%, 15% {
+    opacity: 1;
+  }
+  15% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  60% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  60%, 90% {
+    opacity: 0;
+  }
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  95%, 100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes ripples {
+  0%, 30% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    opacity: 0.3;
+  }
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ripples {
+  0%, 30% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    opacity: 0.3;
+  }
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+  }
+}

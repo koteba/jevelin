@@ -1,0 +1,53 @@
+/** fix infowindow dimensions **/
+.fw-map-canvas .unyson-shortcode-map-content {
+	/*max-width: 420px;*/
+	min-width: 274px;
+}
+.fw-map-canvas img {
+	max-width: none !important;
+
+}
+.fw-map-canvas .gm-style-iw{
+	/*min-height: 70px;*/
+	overflow: hidden;
+	margin: -4px -10px;
+	top: 16px!important;
+	left: 22px!important;
+}
+/** .fix infowindow dimensions **/
+
+.fw-map-canvas .infowindow a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #568EC7;
+}
+.fw-map-canvas .infowindow-thump img {
+	width: 180px;
+	height: 180px;
+	margin-right: 20px;
+	position: relative;
+}
+.fw-map-canvas .infowindow-thump {
+	float: left;
+}
+.fw-map-canvas .infowindow-title {
+	line-height: 27px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.fw-map-canvas .infowindow-title a {
+	color: #505050!important;
+	font-size: 15px;
+}
+.fw-map-canvas .infowindow-content {
+	float: left;
+	width: 230px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.fw-map-canvas .infowindow::after {
+	clear: both;
+	display: block;
+	content: "";
+}

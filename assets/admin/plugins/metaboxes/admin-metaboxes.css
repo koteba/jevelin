@@ -1,0 +1,570 @@
+/*
+** Shufflehound Metaboxes
+*/
+
+
+/*
+** General
+*/
+.sh-metaboxes {
+    display: flex;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+    margin-left: -14px;
+}
+
+
+/*
+** Notices
+*/
+.sh-metaboxes-notice-unsaved {
+    display: none;
+    padding: 13px 23px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    background-color: #FCF8E3;
+    color: #C09853;
+    font-weight: 600;
+}
+
+
+/*
+** Sidebar
+*/
+.sh-metaboxes-sidebar {
+    width: 225px;
+    margin-right: 40px;
+    background-color: #f9f7f7;
+    padding: 15px;
+}
+
+.sh-metaboxes-sidebar-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f8f8f8;
+    margin-bottom: 0px;
+    padding: 16px 20px 16px 20px;
+    border-radius: 5px;
+    color: #505050;
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.sh-metaboxes-sidebar-item.active {
+    opacity: 1;
+    background-color: #2664ff;
+    box-shadow: 0px 6px 11px 0px rgba(0, 73, 255, 0.20);
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+}
+
+.sh-metaboxes-sidebar-item:not(.active):hover {
+    color: #777;
+    opacity: 1;
+}
+
+.sh-metaboxes-sidebar-item i {
+    padding-right: 20px;
+    font-size: 1.35em;
+    position: relative;
+    bottom: -1px;
+    transition: 0s;
+}
+
+
+/*
+** Sections
+*/
+.sh-metaboxes-content {
+    width: calc( 100% - 225px );
+    min-height: 300px;
+    padding-top: 15px;
+}
+
+.sh-metaboxes-section {
+    display: none;
+    padding-bottom: 20px;
+}
+
+.sh-metaboxes-section.active {
+    display: block;
+}
+
+.sh-metaboxes-section-title {
+    margin-bottom: 40px;
+}
+
+
+/*
+** Fields
+*/
+.sh-metaboxes-field {
+    display: flex;
+}
+
+.sh-metaboxes-field:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.sh-metaboxes-info {
+    width: 30%;
+    max-width: 340px;
+}
+
+.sh-metaboxes-info > strong {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.sh-metaboxes-info p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.sh-metaboxes-data {
+    width: 70%;
+    padding-left: 15px;
+}
+
+.sh-metaboxes-data select,
+.sh-metaboxes-data textarea,
+.sh-metaboxes-data input:not(.button) {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    min-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.sh-metaboxes-data textarea {
+    min-height: 6em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/*
+** RAW title
+*/
+.sh-metaboxes-field-raw-title {
+    font-size: 21px;
+    padding: 0;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+
+/*
+** Field - Button
+*/
+.sh-metaboxes-field-button-item {
+    display: inline-block;
+    position: relative;
+    margin-right: -4px;
+}
+
+.sh-metaboxes-field-button input {
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0;
+}
+
+.sh-metaboxes-field-button label {
+    display: block;
+    background-color: #fff;
+    padding: 7px 15px 8px 15px;
+    border: 1px solid #ccc;
+    color: #9b9b9b;
+    transition: 0.2s all ease;
+}
+
+.sh-metaboxes-field-button-checkbox:checked + label {
+    color: #fff;
+    background-color: #2664ff;
+    border-color: #2664ff;
+}
+
+.sh-metaboxes-field-button-item:first-child label {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sh-metaboxes-field-button-item:last-child label {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*
+** Field - Radio
+*/
+.sh-metaboxes-field-color-content {
+    max-width: 100px;
+}
+
+
+/*
+** Field - Radio
+*/
+.sh-metaboxes-field-radio input {
+    width: 16px!important;
+    max-width: 16px!important;
+    height: 16px!important;
+    min-height: auto!important;
+    display: inline-block!important;
+}
+
+.sh-metaboxes-field-radio-item {
+    margin-bottom: 10px;
+}
+
+
+/*
+** Field - Multi Text
+*/
+.sh-metaboxes-field-multi_text-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sh-metaboxes-field-multi_text-item input {
+    border-radius: 3px;
+}
+
+.sh-metaboxes-field-multi_text-delete {
+    cursor: pointer;
+}
+
+.sh-metaboxes-field-multi_text-delete i {
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.sh-metaboxes-field-multi_text-delete:hover {
+    color: red;
+}
+
+
+/*
+** Field - Repeater
+*/
+.sh-metaboxes-repeater-item-container {
+    display: inline-block;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.06);
+    border: 1px solid #ededed;
+    padding: 20px 20px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.widget-content .sh-metaboxes-repeater-item-container {
+    display: block;
+    width: auto;
+    max-width: auto;
+}
+
+.sh-metaboxes-repeater-header {
+    display: flex;
+    padding-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sh-metaboxes-repeater-header-title {
+    font-weight: 600;
+    flex: 1;
+}
+
+.sh-metaboxes-repeater-item-content {
+    display: none;
+    position: relative;
+    border-top: 1px solid #ededed;
+    padding-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.sh-metaboxes-repeater-item-container.open .sh-metaboxes-repeater-item-content {
+    display: block;
+}
+
+.sh-metaboxes-repeater-item input {
+    margin-top: 5px;
+}
+
+.sh-metaboxes-repeater-field-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sh-metaboxes-field-repeater-delete {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sh-metaboxes-field-repeater-delete:hover {
+    color: red;
+}
+
+
+/*
+** Field - Media
+*/
+input.sh-metaboxes-field-media-upload {
+    display: inline-block;
+    width: auto;
+}
+
+input.sh-metaboxes-field-media-remove {
+    display: none!important;
+    width: auto;
+    color: #fff!important;
+    margin-left: 6px!important;
+}
+
+.sh-metaboxes-field-media-preview {
+    display: none;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #e3e3e3;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    line-height: 0;
+}
+
+.sh-metaboxes-field-media-preview img {
+    max-width: 150px;
+}
+
+input.sh-metaboxes-field-media-remove.active-button,
+.sh-metaboxes-field-media-preview.active {
+    display: inline-block!important;
+}
+
+.sh-metaboxes-field-media input {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    height: 40px;
+    color: #fff!important;
+    transition: 0.3s all ease;
+}
+
+.sh-metaboxes-field-media input,
+.sh-metaboxes-field-media .sh-metaboxes-field-media-upload:focus,
+.sh-metaboxes-field-media .sh-metaboxes-field-media-upload:hover {
+    border-width: 0px!important;
+    border-color: transparent!important;
+    box-shadow: none;
+}
+
+.sh-metaboxes-field-media .sh-metaboxes-field-media-upload {
+    background-color: #67c712;
+}
+
+.sh-metaboxes-field-media .sh-metaboxes-field-media-upload:focus,
+.sh-metaboxes-field-media .sh-metaboxes-field-media-upload:hover {
+    background-color: #60be0c;
+}
+
+.sh-metaboxes-field-media .sh-metaboxes-field-media-remove {
+    background-color: #f14a4a;
+}
+
+.sh-metaboxes-field-media .sh-metaboxes-field-media-remove:hover {
+    background-color: #e83e3e;
+}
+
+
+/*
+** Field - Icon
+*/
+.sh-metaboxes-field-icon select {
+    margin-top: 10px;
+}
+
+.sh-metaboxes-field-icon-list {
+    margin-top: 20px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.sh-metaboxes-field-icon-list i {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sh-metaboxes-field-icon-list i.active,
+.sh-metaboxes-field-icon-list i:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+
+/*
+** Loading
+*/
+.edit-post-meta-boxes-area.is-loading .sh-metaboxes {
+    opacity: 0.5;
+}
+
+
+
+
+/*
+** Responsive
+*/
+@media (max-width: 1200px) {
+    .sh-metaboxes-sidebar {
+        width: 150px;
+    }
+
+    .sh-metaboxes-content {
+        width: calc( 100% - 150px );
+    }
+
+    .sh-metaboxes-info {
+        width: 40%;
+    }
+
+    .sh-metaboxes-data {
+        width: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+    .sh-metaboxes {
+        display: block;
+    }
+
+    .sh-metaboxes-sidebar,
+    .sh-metaboxes-content {
+        width: 100%;
+    }
+
+    .sh-metaboxes-sidebar {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+/*
+** Widgets
+*/
+.sh-metaboxes-widget {
+    padding: 20px 10px;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-field {
+    display: block;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-field:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-field > div {
+    width: 100%;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-info {
+    padding-bottom: 15px;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-info p {
+    margin-bottom: 0px;
+}
+
+.sh-metaboxes-widget .sh-metaboxes-data {
+    padding-left: 0px;
+}
+
+
+
+
+/*
+** Metaboxes - Post format
+*/
+.sh-metaboxes-post-format {
+    display: none;
+}
+
+
+
+
+/*
+** Theme - Gillion
+*/
+body.jevelin-theme .sh-metaboxes {
+    display: block;
+    margin-left: 0px;
+}
+
+body.jevelin-theme .sh-metaboxes-content {
+    width: 100%;
+    padding-left: 15px;
+    min-height: auto;
+    padding-top: 50px;
+}
+
+body.jevelin-theme .sh-metaboxes-sidebar {
+    width: 100%;
+    background-color: transparent;
+    margin-right: 0px;
+    padding: 8px;
+}
+
+body.jevelin-theme .sh-metaboxes-sidebar-item {
+    display: inline-block;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 6px;
+    color: #646464;
+}
+
+body.jevelin-theme .sh-metaboxes-sidebar-item i {
+    padding-right: 14px;
+}
+
+body.jevelin-theme .sh-metaboxes-section-title {
+    display: none;
+}
+
+body.jevelin-theme .sh-metaboxes-sidebar-item.active,
+body.jevelin-theme .sh-metaboxes input[type=radio]:checked::before {
+    background-color: #294cff;
+}
+
+body.jevelin-theme .sh-metaboxes-sidebar-item.active {
+    color: #fff;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+body.jevelin-theme .sh-metaboxes-field-button-checkbox:checked + label {
+    background-color: #294cff;
+    border-color: #294cff;
+}
